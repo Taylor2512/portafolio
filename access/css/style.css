@@ -1,0 +1,14 @@
+/* Importar otros archivos CSS */
+@import url('base/base.css');
+@import url('components/header.css');
+@import url('components/footer.css');
+@import url('components/icons.css');
+@import url('blocks/about.css');
+@import url('blocks/inicio.css');
+@import url('blocks/contact.css');
+
+/* Estilos adicionales si son necesarios */
+body {
+    background-color: #7c7c7c;
+    color: #333;
+}

@@ -1,0 +1,55 @@
+/* Seccion Inicio */
+.inicio {
+    background: linear-gradient(to top, rgb(30, 35, 38,.8),rgb(30, 35, 38,1)),
+    url('../../img/fondo.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    color: #fff;
+    align-items: center;
+}
+.contenido-img img {
+    width: 50%;
+    height: 50%;
+    border-radius: 6rem;
+}
+.inicio .contenido-baner {
+    padding: 20px;
+    background-color: #1e2326;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+.inicio .contendio-baner img {
+    margin-top: 40px;
+    border: 10px solid #1CB698;
+    display: block;
+    width: 80%;
+
+}
+.inicio .contendio-baner h1 {
+    margin-top: 40px;
+    font-size: 62px; 
+    font-family: 'Rigtheous', cursive;
+}
+.inicio .contendio-baner h2 {
+    font-size: 15px;
+    font-weight: normal;
+}
+.inicio .contenido-baner .redes a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+.inicio .contenido-baner .redes a:hover {
+    background-color: #1CB698;
+}

@@ -1,0 +1,52 @@
+
+/* Estilos para el pie de página (footer) */
+html {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+footer {
+    margin-top: auto;
+}
+.footer {
+    background: dimgray;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+/* Estilos para los nombres de los iconos */
+.footer__social-link {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 0.875rem;
+    margin-left: 1rem; /* Espacio entre los íconos */
+    margin-right: 1rem; /* Espacio entre los íconos */
+    margin-top: 0.5rem; /* Espacio entre el ícono y el texto */
+}
+
+
+.footer__social {
+    color: white;
+    text-decoration: none;
+  
+}
+
+/* Responsive styles */
+@media screen and (max-width: 48rem) {
+    .ti {
+        margin-bottom: 0.5rem; /* Reducir el espacio entre el ícono y el texto en pantallas pequeñas */
+    }
+
+    .footer__social-link {
+        font-size: 0.75rem; /* Reducir el tamaño de fuente para los nombres en pantallas pequeñas */
+    }
+}

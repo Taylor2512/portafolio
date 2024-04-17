@@ -1,0 +1,15 @@
+/* Estilos para la sección "Acerca de" */
+.about {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+.about__title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about__description {
+    color: #666;
+}

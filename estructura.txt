@@ -1,0 +1,131 @@
+ El volumen de la unidad C no tiene etiqueta.
+ El n£mero de serie del volumen es: 98FF-68FA
+
+ Directorio de C:\Users\jt251\OneDrive\Documentos\Trabajos\src
+
+13/04/2024  09:53    <DIR>          .
+12/04/2024  23:23    <DIR>          ..
+12/04/2024  22:28    <DIR>          access
+13/04/2024  09:53               317 appSettings.json
+12/04/2024  22:30    <DIR>          components
+13/04/2024  10:04                 0 estructura.txt
+13/04/2024  10:03             2.808 index.html
+13/04/2024  09:55    <DIR>          js
+               3 archivos          3.125 bytes
+
+ Directorio de C:\Users\jt251\OneDrive\Documentos\Trabajos\src\access
+
+12/04/2024  22:28    <DIR>          .
+13/04/2024  09:53    <DIR>          ..
+13/04/2024  09:40    <DIR>          css
+12/04/2024  21:26    <DIR>          fonts
+13/04/2024  00:18    <DIR>          icons
+12/04/2024  22:19    <DIR>          img
+               0 archivos              0 bytes
+
+ Directorio de C:\Users\jt251\OneDrive\Documentos\Trabajos\src\access\css
+
+13/04/2024  09:40    <DIR>          .
+12/04/2024  22:28    <DIR>          ..
+12/04/2024  21:21    <DIR>          base
+12/04/2024  21:27    <DIR>          blocks
+13/04/2024  00:13    <DIR>          components
+13/04/2024  00:27               360 style.css
+               1 archivos            360 bytes
+
+ Directorio de C:\Users\jt251\OneDrive\Documentos\Trabajos\src\access\css\base
+
+12/04/2024  21:21    <DIR>          .
+13/04/2024  09:40    <DIR>          ..
+12/04/2024  21:26               215 base.css
+               1 archivos            215 bytes
+
+ Directorio de C:\Users\jt251\OneDrive\Documentos\Trabajos\src\access\css\blocks
+
+12/04/2024  21:27    <DIR>          .
+13/04/2024  09:40    <DIR>          ..
+12/04/2024  21:27               248 about.css
+12/04/2024  21:27               586 contact.css
+               2 archivos            834 bytes
+
+ Directorio de C:\Users\jt251\OneDrive\Documentos\Trabajos\src\access\css\components
+
+13/04/2024  00:13    <DIR>          .
+13/04/2024  09:40    <DIR>          ..
+13/04/2024  00:29               933 footer.css
+12/04/2024  21:53               921 header.css
+13/04/2024  09:51               878 icons.css
+               3 archivos          2.732 bytes
+
+ Directorio de C:\Users\jt251\OneDrive\Documentos\Trabajos\src\access\fonts
+
+12/04/2024  21:26    <DIR>          .
+12/04/2024  22:28    <DIR>          ..
+               0 archivos              0 bytes
+
+ Directorio de C:\Users\jt251\OneDrive\Documentos\Trabajos\src\access\icons
+
+13/04/2024  00:18    <DIR>          .
+12/04/2024  22:28    <DIR>          ..
+13/04/2024  00:18             6.596 email_gmail.png
+13/04/2024  00:18             8.004 github.png
+13/04/2024  00:17            33.778 instagram.png
+13/04/2024  00:16             6.254 linkedin.png
+13/04/2024  00:15    <DIR>          networksocial
+13/04/2024  00:17            21.731 whatsapp.png
+               5 archivos         76.363 bytes
+
+ Directorio de C:\Users\jt251\OneDrive\Documentos\Trabajos\src\access\icons\networksocial
+
+13/04/2024  00:15    <DIR>          .
+13/04/2024  00:18    <DIR>          ..
+12/04/2024  23:42            67.646 github.png
+13/04/2024  00:15             6.254 linkedin.png
+12/04/2024  23:45            67.646 mail.png
+               3 archivos        141.546 bytes
+
+ Directorio de C:\Users\jt251\OneDrive\Documentos\Trabajos\src\access\img
+
+12/04/2024  22:19    <DIR>          .
+12/04/2024  22:28    <DIR>          ..
+12/04/2024  22:19            22.180 logo.jpg
+               1 archivos         22.180 bytes
+
+ Directorio de C:\Users\jt251\OneDrive\Documentos\Trabajos\src\components
+
+12/04/2024  22:30    <DIR>          .
+13/04/2024  09:53    <DIR>          ..
+12/04/2024  23:38             2.616 about.html
+12/04/2024  23:39             2.616 blog.html
+12/04/2024  23:39             2.616 contact.html
+12/04/2024  23:39             2.616 portfolio.html
+12/04/2024  23:38             2.616 resume.html
+               5 archivos         13.080 bytes
+
+ Directorio de C:\Users\jt251\OneDrive\Documentos\Trabajos\src\js
+
+13/04/2024  09:55    <DIR>          .
+13/04/2024  09:53    <DIR>          ..
+13/04/2024  09:57    <DIR>          components
+13/04/2024  09:56    <DIR>          helpers
+13/04/2024  09:58               408 main.js
+               1 archivos            408 bytes
+
+ Directorio de C:\Users\jt251\OneDrive\Documentos\Trabajos\src\js\components
+
+13/04/2024  09:57    <DIR>          .
+13/04/2024  09:55    <DIR>          ..
+13/04/2024  10:01               774 footer.js
+13/04/2024  09:57                 0 header.js
+               2 archivos            774 bytes
+
+ Directorio de C:\Users\jt251\OneDrive\Documentos\Trabajos\src\js\helpers
+
+13/04/2024  09:56    <DIR>          .
+13/04/2024  09:55    <DIR>          ..
+13/04/2024  09:56                87 utils.js
+               1 archivos             87 bytes
+
+     Total de archivos en la lista:
+              28 archivos        261.704 bytes
+              41 dirs  505.530.580.992 bytes libres

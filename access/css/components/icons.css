@@ -1,0 +1,35 @@
+/* Estilos para los iconos personalizados */
+.ti {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-size: cover;
+}
+.ti-facebook {
+    background-image: url('../../icons/facebook.png');
+}
+
+.ti-twitter {
+    background-image: url('../../icons/twitter.png');
+}
+
+.ti-instagram {
+    background-image: url('../../icons/instagram.png');
+}
+
+.ti-linkedin {
+    background-image: url('../../icons/linkedin.png');
+}
+
+.ti-github {
+    background-image: url('../../icons/github.png');
+}
+
+.ti-mail {
+    background-image: url('../../icons/email_gmail.png');
+}
+.ti-nav-bar {
+    background-image: url('../../icons/nav-bar.png');
+}
+
+ 
