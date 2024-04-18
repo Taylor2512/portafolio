@@ -41,6 +41,9 @@
 .ti-plane {
     background-image: url('../../icons/plane.png');
 }
-.ti.book{
+.ti-book {
     background-image: url('../../icons/book.png');
+}
+.ti-dowload {
+    background-image: url('../../icons/dowload.png');
 }
