@@ -9,7 +9,7 @@ html {
 
 /* Estilos generales */
 .container {
-    max-width: 1200px;
+    max-width: 75em; /* Cambié px a em */
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 1.25em; /* Cambié px a em */
 }

@@ -1,15 +1,123 @@
 /* Estilos para la sección "Acerca de" */
 .about {
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    padding: 20px;
+    margin-bottom: 1.25rem; /* equivalente a 20px */
+    border: 0.0625rem solid #ddd; /* equivalente a 1px */
+    padding: 1.25rem; /* equivalente a 20px */
 }
 
 .about__title {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 1.5rem; /* equivalente a 24px */
+    margin-bottom: 0.625rem; /* equivalente a 10px */
 }
 
 .about__description {
     color: #666;
+}
+
+.about-me{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50 px 20px;
+    height: 100%;
+}
+
+.about-me .contenido-section{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.about-me h2{
+    font-size: 48px;
+    font-family: 'Righteous', cursive;
+    padding: 20px;
+}
+.about-me .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.about-me .contenido-section p span{
+    font-weight: bold;
+    color: #1CB698;
+}
+.about-me .fila{
+    display: flex;
+
+}
+.about-me .fila .col{
+    width: 50%;
+ 
+}
+.about-me .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous', cursive;
+    margin-bottom: 25px;
+}
+
+.about-me .fila .col ul{
+    list-style: none;
+}
+
+.about-me .fila .col ul li{
+    margin: 12px 0
+}
+.about-me .fila .col ul li strong{
+ display: inline-block;
+ color: #1CB698;
+ width: 130px;
+}
+.about-me .fila .col ul li span{
+    background-color: #1CB698;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.about-me .fila .col contenido-intereses{
+display: flex;
+flex-wrap: wrap;
+}
+.about-me .fila .col contenido-intereses .interes{
+    width: 100%;
+    height: 100%;
+    background-color: #252A2E;
+    border-radius:  10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    transition: .3s;
+}
+.about-me .fila .col contenido-intereses .interes:hover{
+    background-color: #1CB698;
+}
+.about-me .fila .col contenido-intereses .interes i{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.about-me button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .about {
+        padding: 0.625rem; /* equivalente a 10px */
+    }
+
+    .about__title {
+        font-size: 1.25rem; /* equivalente a 20px */
+        margin-bottom: 0.3125rem; /* equivalente a 5px */
+    }
 }

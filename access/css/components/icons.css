@@ -32,4 +32,15 @@
     background-image: url('../../icons/nav-bar.png');
 }
 
- 
+.ti-gamepad {
+    background-image: url('../../icons/gamepad.png');
+}
+.ti-music {
+    background-image: url('../../icons/music.png');
+}
+.ti-plane {
+    background-image: url('../../icons/plane.png');
+}
+.ti.book{
+    background-image: url('../../icons/book.png');
+}
