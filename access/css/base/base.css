@@ -6,10 +6,26 @@ html {
     font-family: Arial, sans-serif;
     scroll-behavior: smooth;
 }
+a {
+    text-decoration: none;
+    /* Oculta el subrayado */
+    color: inherit;
+    /* Mantener el color del texto por defecto */
+}
 
 /* Estilos generales */
 .container {
     max-width: 75em; /* Cambié px a em */
     margin: 0 auto;
     padding: 0 1.25em; /* Cambié px a em */
+}
+
+@media (max-width: 767px) {
+  /* Estilos para dispositivos móviles */
+  body {
+    font-size: 16px;
+  }
+  .container {
+    padding: 0 0.625em; /* 10px */
+  }
 }

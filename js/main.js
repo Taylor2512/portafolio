@@ -7,10 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
         links: [
             {
                 name: "linkedin",
-                url: "https://www.linkedin.com/in/jhonn-montenegro-arellano-28621a1bb/",
+                url: "https://www.linkedin.com/",
             },
-            { name: "github", url: "https://github.com/Taylor2512" },
-            { name: "mail", url: "jhonmontenegro2512@gmail.com" },
+            { name: "github", url: "https://github.com/mrivasg" },
+            { name: "mail", url: "mailto:milton.rivas@uees.edu.ec" },
         ],
     };
 
@@ -46,10 +46,10 @@ document.addEventListener('DOMContentLoaded', function() {
         links: [
             {
                 name: "linkedin",
-                url: "https://www.linkedin.com/in/jhonn-montenegro-arellano-28621a1bb/",
+                url: "https://www.linkedin.com/",
             },
-            { name: "github", url: "https://github.com/Taylor2512" },
-            { name: "mail", url: "mailto:jhonmontenegro2512@gmail.com" },
+            { name: "github", url: "https://github.com/mrivasg" },
+            { name: "mail", url: "mailto:milton.rivas@uees.edu.ec" },
         ],
     };
 

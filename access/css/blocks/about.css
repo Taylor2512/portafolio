@@ -151,15 +151,68 @@
 
 
 @media screen and (max-width: 768px) {
-    .about {
-        padding: 0.625rem;
-        /* equivalente a 10px */
+    .about-me {
+        padding: 10px;
     }
 
-    .about__title {
-        font-size: 1.25rem;
-        /* equivalente a 20px */
-        margin-bottom: 0.3125rem;
-        /* equivalente a 5px */
+    .about-me h2 {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .about-me .contenido-seccion p {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 10px;
+    }
+
+    .about-me .fila {
+        flex-direction: column;
+    }
+
+    .about-me .fila .col {
+        width: 100%;
+    }
+
+    .about-me .fila .col h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .about-me .fila .col ul li {
+        margin: 8px 0;
+    }
+
+    .about-me .fila .col ul li strong {
+        width: 100px;
+    }
+
+    .about-me .fila .col .contenedor-intereses {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .about-me .fila .col .contenedor-intereses .intereses {
+        width: calc(50% - 10px);
+        margin: 0 5px 10px 0;
+    }
+
+    .about-me button {
+        margin: 5px auto;
+        font-size: 14px;
+    }
+
+    .about-me .grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        padding: 10px;
+    }
+
+    .about-me .grid h3 {
+        margin-bottom: 5px;
+    }
+
+    .about-me .grid ul li {
+        margin-bottom: 15px;
     }
 }

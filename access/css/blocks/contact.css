@@ -2,19 +2,19 @@
     background-image: url(../../img/contact_bg.png);
     background-color: #1e2326;
     color: #fff;
-    padding: 50px 0;
+    padding: 3.125em 0;
 }
 
 .contacto .contenido-seccion {
-    max-width: 1100px;
+    max-width: 68.75rem;
     margin: 0 auto;
 }
 
 .contacto h2 {
-    font-size: 48px;
+    font-size: 3rem;
     font-family: 'Righteous', cursive;
     text-align: center;
-    padding: 20px 0;
+    padding: 1.25em 0;
 }
 
 .contacto .fila {
@@ -23,7 +23,7 @@
 
 .contacto .col {
     width: 50%;
-    padding: 10px;
+    padding: 0.625em;
     position: relative;
 }
 
@@ -31,23 +31,23 @@
 .contacto .col textarea {
     display: block;
     width: 90%;
-    padding: 18px;
-    margin-bottom: 20px;
-    border: 1px solid #fff;
+    padding: 1.125em;
+    margin-bottom: 1.25em;
+    border: 0.0625em solid #fff;
     background-color: #252A2E;
     color: #fff;
-    font-size: 18px;
+    font-size: 1.125em;
 }
 
 .contacto button {
     cursor: pointer;
     background-color: transparent;
-    border: 2px solid #fff;
+    border: 0.125em solid #fff;
     width: fit-content;
     display: block;
-    margin: 20px auto;
-    padding: 10px 22px;
-    font-size: 16px;
+    margin: 1.25em auto;
+    padding: 0.625em 1.375em;
+    font-size: 1em;
     color: #fff;
     position: relative;
     z-index: 10;
@@ -80,22 +80,52 @@
     justify-content: center;
     background-color: #252A2E;
     transform: translate(-50%, -50%);
-    max-width: 11000px;
+    max-width: 68.75rem;
     width: 60%;
     height: 25%;
 }
 
 .contacto .col .info ul {
+    display: flex;
+    flex-direction: column;
     list-style: none;
 }
 
 .contacto .col .info ul li {
-
-    margin-bottom: 20px;
+    margin-bottom: 1.25em;
+    margin-right: 1.2em;
+    
 }
 
 .contacto .col .info ul li i {
     color: #1CB698;
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 1.25em;
+}
+@media (max-width: 480px) {
+    .contacto h2 {
+        font-size: 2rem;
+    }
+
+    .contacto .col input,
+    .contacto .col textarea {
+        width: 100%;
+    }
+
+    .contacto button {
+        margin: 1.25em 0;
+    }
+
+    .contacto .col .info {
+        width: 80%;
+    }
+}
+@media (max-width: 768px) {
+    .contacto .fila {
+        flex-direction: column;
+    }
+
+    .contacto .col {
+        width: 100%;
+    }
 }
