@@ -56,6 +56,9 @@
 .ti-mobile{
     background-image: url('../../icons/mobile.png');
 }
-.ti-envelope{
+.ti-envelope {
     background-image: url('../../icons/envelope.png');
+}
+.ti-check {
+    background-image: url('../../icons/check.png');
 }

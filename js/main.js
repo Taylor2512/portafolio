@@ -70,3 +70,11 @@ document.addEventListener('DOMContentLoaded', function() {
         redesContainer.appendChild(anchor);
     });
 });
+function toggleSidebar() {
+    var sidebar = document.getElementById('sidebar');
+    if (sidebar.classList.contains('active')) {
+        sidebar.classList.remove('active');
+    } else {
+        sidebar.classList.add('active');
+    }
+}

@@ -18,7 +18,8 @@
 </head>
 
 <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/png" href="../access/img/favicon.png">
+<link rel="icon" type="image/png" href="../access/img/favicon.png">
+
 <body>
     <div class="contenedor-header">
         <header>
@@ -34,7 +35,22 @@
                     <li><a href="contact.html">Contacto</a></li>
                 </ul>
             </nav>
-            <div class="nav-responsive">
+            <div id="sidebar" class="sidebar">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <hr>
+                    <li><a href="about.html">Acerca de</a></li>
+                    <hr>
+                    <li><a href="blog.html">Experiencia</a></li>
+                    <hr>
+                    <li><a href="portfolio.html">Proyectos</a></li>
+                    <hr>
+                    <li><a href="contact.html">Contacto</a></li>
+                    <hr>
+                </ul>
+            </div>
+
+            <div class="nav-responsive" onclick="toggleSidebar()">
                 <i class="ti ti-nav-bar"></i>
             </div>
         </header>
@@ -44,7 +60,8 @@
     <section class="about-me">
         <div class="contenido-seccion">
             <h2>Acerca de mi</h2>
-            <p><span>Hola</span> soy Milton Rivas, un estudiante de programación, me dedico al desarrollo de videojuegos y el
+            <p><span>Hola</span> soy Milton Rivas, un estudiante de programación, me dedico al desarrollo de videojuegos
+                y el
                 desarrollo de videojuegos.</p>
 
             <div class="fila">
@@ -53,23 +70,23 @@
                     <ul>
                         <li>
                             <strong>Cumpleaños:</strong>
-                            25-12-1997
+                            25-08-1994
                         </li>
                         <li>
                             <strong>Teléfono:</strong>
-                            0951535970
+                            +593 993898467
                         </li>
                         <li>
                             <strong>Email:</strong>
-                            2QqFP@example.com
+                             milton.rivas@uees.edu.ec
                         </li>
                         <li>
                             <strong>Dirección:</strong>
-                            Cebu, 10000 Philippines
+                            Km 5.5 via Daule Mapasingue
                         </li>
                         <li>
                             <strong>Cargo:</strong>
-                            Estudiante
+                            Desarrollador de software
                         </li>
                     </ul>
                 </div>
@@ -94,39 +111,82 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
-            
+
             <button>
-                Descargar CV 
+                Descargar CV
                 <i class="ti ti-dowload"></i>
                 <div class="overlay"></div>
-            </button>  
+            </button>
         </div>
     </section>
     <div class="about-me">
+<div class="table">
+    <table>
+        <thead>
+            <tr>
+                <th>Lenguaje de Programación</th>
+                <th>Bajo</th>
+                <th>Medio</th>
+                <th>Alto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Java</td>
+                <td><i class="ti ti-check"></i></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td></td>
+                <td><i class="ti ti-check"></i></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td></td>
+                <td></td>
+                <td><i class="ti ti-check"></i></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+    </div>
+ 
+    <div class="about-me">
         <div class="grid">
             <h3>Respuestas</h3>
-          
-                <li>
-                    <strong>¿Qué le motivó a estudiar la carrera de sistemas?</strong>
-                    <p>Mi interés por resolver problemas complejos y mi fascinación por la tecnología me llevaron a elegir la carrera de sistemas. Siempre me ha entusiasmado la idea de crear soluciones innovadoras que mejoren la vida de las personas.</p>
-                </li>
-                <li>
-                    <strong>¿Cuál es su campo de experiencia (seguridad, redes, entre otros)?</strong>
-                    <p>Mi campo de experiencia se centra en el desarrollo de software, especialmente en aplicaciones web y móviles. También tengo interés en seguridad informática y arquitectura de sistemas.</p>
-                </li>
-                <li>
-                    <strong>¿Qué herramientas y/o tecnologías conoce?</strong>
-                    <p>Domino varios lenguajes de programación como Java, Python y JavaScript, así como frameworks como React y Spring. Además, tengo experiencia en bases de datos SQL y NoSQL, y en el uso de herramientas como Git para el control de versiones.</p>
-                </li>
-                <li>
-                    <strong>¿Qué tipos de proyectos ha realizado en su primer trabajo o actualmente? Mencione al menos un proyecto.</strong>
-                    <p>En mi trabajo actual, participé en el desarrollo de un sistema de gestión de inventario utilizando tecnologías de nube como AWS. Este proyecto me permitió aplicar mis conocimientos en arquitectura de software y trabajo colaborativo.</p>
-                </li>
-           
+
+            <li>
+                <strong>¿Qué le motivó a estudiar la carrera de sistemas?</strong>
+                <p>Mi interés por resolver problemas complejos y mi fascinación por la tecnología me llevaron a elegir
+                    la carrera de sistemas. Siempre me ha entusiasmado la idea de crear soluciones innovadoras que
+                    mejoren la vida de las personas.</p>
+            </li>
+            <li>
+                <strong>¿Cuál es su campo de experiencia (seguridad, redes, entre otros)?</strong>
+                <p>Mi campo de experiencia se centra en el desarrollo de software, especialmente en aplicaciones web y
+                    móviles. También tengo interés en seguridad informática y arquitectura de sistemas.</p>
+            </li>
+            <li>
+                <strong>¿Qué herramientas y/o tecnologías conoce?</strong>
+                <p>Domino varios lenguajes de programación como Java, Python y JavaScript, así como frameworks como
+                    React y Spring. Además, tengo experiencia en bases de datos SQL y NoSQL, y en el uso de herramientas
+                    como Git para el control de versiones.</p>
+            </li>
+            <li>
+                <strong>¿Qué tipos de proyectos ha realizado en su primer trabajo o actualmente? Mencione al menos un
+                    proyecto.</strong>
+                <p>En mi trabajo actual, participé en el desarrollo de un sistema de gestión de inventario utilizando
+                    tecnologías de nube como AWS. Este proyecto me permitió aplicar mis conocimientos en arquitectura de
+                    software y trabajo colaborativo.</p>
+            </li>
+
         </div>
-      
+
     </div>
     <footer class="footer">
         <div class="container">

@@ -50,6 +50,54 @@
     cursor: pointer;
     display: none;
 }
+.sidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    /* Puedes ajustar este valor a tus necesidades */
+    height: 100%;
+    background-color: #1e2326;
+    /* Puedes ajustar este valor a tus necesidades */
+    overflow: auto;
+    transition: 0.5s;
+    /* Añade una transición suave al mostrar y ocultar el sidebar */
+}
+
+.sidebar.active {
+    display: block;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 10px;
+    /* Puedes ajustar este valor a tus necesidades */
+    text-decoration: none;
+    color: #fff;
+    /* Puedes ajustar este valor a tus necesidades */
+}
+.sidebar hr {
+    width: 100%;
+    /* Puedes ajustar este valor a tus necesidades */
+    margin: 10px auto;
+    /* Puedes ajustar este valor a tus necesidades */
+    border: 1px solid #1CB698;
+    /* Puedes ajustar este valor a tus necesidades */
+}
+.sidebar ul li a:hover {
+    background-color: #1CB698;
+    /* Puedes ajustar este valor a tus necesidades */
+}
 @media screen and (max-width: 768px) {
     .contenedor-header header nav ul {
         display: none;

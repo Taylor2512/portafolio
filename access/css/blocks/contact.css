@@ -1,3 +1,4 @@
+/* Estilos para la sección de contacto (contacto) */
 .contacto {
     background-image: url(../../img/contact_bg.png);
     background-color: #1e2326;
@@ -19,10 +20,13 @@
 
 .contacto .fila {
     display: flex;
+    flex-wrap: wrap;
+    /* Permitir que los elementos se envuelvan en pantallas pequeñas */
 }
 
 .contacto .col {
-    width: 50%;
+    width: 95%;
+    /* Ocupar todo el ancho en dispositivos móviles */
     padding: 0.625em;
     position: relative;
 }
@@ -30,13 +34,15 @@
 .contacto .col input,
 .contacto .col textarea {
     display: block;
-    width: 90%;
+    width: 85%;
+    /* Ocupar todo el ancho disponible */
     padding: 1.125em;
     margin-bottom: 1.25em;
     border: 0.0625em solid #fff;
     background-color: #252A2E;
     color: #fff;
     font-size: 1.125em;
+    border-radius: 1rem;
 }
 
 .contacto button {
@@ -51,6 +57,7 @@
     color: #fff;
     position: relative;
     z-index: 10;
+    border-radius: 1rem;
 }
 
 .contacto button .overlay {
@@ -62,6 +69,7 @@
     background-color: #1CB698;
     z-index: -1;
     transition: 1s;
+        border-radius: 1rem;
 }
 
 .contacto button:hover .overlay {
@@ -69,63 +77,45 @@
 }
 
 .contacto .col img {
-    width: auto;
+    width: 100%;
+    /* Ocupar todo el ancho disponible */
     height: auto;
+    margin-top: 1.25em;
+    /* Espacio entre el formulario y la imagen en dispositivos móviles */
 }
 
 .contacto .col .info {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    justify-content: center;
+    max-width: 100%;
+    /* Ocupar todo el ancho disponible */
     background-color: #252A2E;
-    transform: translate(-50%, -50%);
-    max-width: 68.75rem;
-    width: 60%;
-    height: 25%;
+    padding: 1.5em;
+    margin-top: 1.25em;
+    /* Espacio entre el formulario y la información en dispositivos móviles */
 }
 
 .contacto .col .info ul {
-    display: flex;
-    flex-direction: column;
     list-style: none;
+    padding: 0;
 }
 
 .contacto .col .info ul li {
-    margin-bottom: 1.25em;
-    margin-right: 1.2em;
-    
+    margin-bottom: 1em;
 }
 
 .contacto .col .info ul li i {
     color: #1CB698;
-    display: inline-block;
-    margin-right: 1.25em;
+    margin-right: 0.5em;
 }
-@media (max-width: 480px) {
-    .contacto h2 {
-        font-size: 2rem;
-    }
 
-    .contacto .col input,
-    .contacto .col textarea {
-        width: 100%;
-    }
-
-    .contacto button {
-        margin: 1.25em 0;
-    }
-
-    .contacto .col .info {
-        width: 80%;
-    }
-}
-@media (max-width: 768px) {
+/* Estilos para dispositivos móviles */
+@media screen and (min-width: 768px) {
     .contacto .fila {
-        flex-direction: column;
+        flex-wrap: nowrap;
+        /* Volver a la disposición horizontal en pantallas más grandes */
     }
 
     .contacto .col {
-        width: 100%;
+        width: 50%;
+        /* Dividir en dos columnas en pantallas más grandes */
     }
 }
