@@ -118,6 +118,37 @@
  width: 100%;
  
 }
+.about-me .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Define 3 columnas de tamaño igual */
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.about-me .grid h3 {
+    grid-column: 1 / -1; /* Ocupa todas las columnas disponibles */
+    margin-bottom: 10px; /* Añade espacio inferior */
+}
+
+.about-me .grid ul {
+    list-style-type: none; /* Elimina viñetas de la lista */
+    padding: 0;
+    margin: 0;
+}
+
+.about-me .grid ul li {
+    margin-bottom: 30px; /* Añade espacio entre elementos de lista */
+}
+
+.about-me .grid ul li strong {
+    display: block; /* Hace que el texto de la pregunta sea bloque para ocupar espacio vertical */
+    font-weight: bold;
+}
+
+.about-me .grid ul li p {
+    margin-top: 5px; /* Añade espacio superior al texto de la respuesta */
+}
+
 
 @media screen and (max-width: 768px) {
     .about {

@@ -13,6 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Platypi:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Portafolio</title>
 </head>
+
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="../access/img/favicon.png">
 <body>
     <div class="contenedor-header">
         <header>
@@ -35,27 +38,50 @@
     </div>
 
     <!-- Seccion Contacto -->
-    <section class="contacto" id="contacto">
-        <div class="container">
-            <h1>Contacto</h1>
-            <form class="contacto-form" action="#" method="post">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-
-                <label for="apellidos">Apellidos:</label>
-                <input type="text" id="apellidos" name="apellidos" required>
-
-                <label for="correo">Correo electrónico:</label>
-                <input type="email" id="correo" name="correo" required>
-
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-
-                <button type="submit">Enviar</button>
-            </form>
+    <section class="contacto">
+        <div class="contenido-seccion">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre" >
+                    <input type="text" placeholder="Apellidos" >
+                    <input type="text" placeholder="Número de teléfono" >
+                    <input type="text" placeholder="Dirección de correo" >
+                    <input type="text" placeholder="Tema" >
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje">
+    
+                    </textarea>
+                    <button>
+                        Enviar Mensaje
+                        <i class="ti ti-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <div class="col">
+                    <img src="../access/img/ubicacion.jpg" alt="ubicacion">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="ti ti-location"></i>
+                                Direccion x de la persona
+                            </li>
+                            <li>
+                                <i class="ti ti-mobile"></i>
+                                Llamanos: 09xxxxxxx                           
+                            </li>
+                            <li>
+                                <i class="ti ti-envelope"></i>
+                                Email:  envelope@gmail.com                           
+                            </li>
+                        </ul>
+                    </div>
+    
+                </div>
+            </div>
+            
         </div>
     </section>
-
+ 
     <footer class="footer">
         <div class="container">
             <p>Sígueme en:</p>

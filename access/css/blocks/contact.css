@@ -1,46 +1,101 @@
-/* Estilos para la sección "Contacto" */
-.contact {
-    margin-bottom: 1.25rem;
-    border: 0.0625rem solid #ddd;
-    padding: 1.25rem;
+.contacto {
+    background-image: url(../../img/contact_bg.png);
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 0;
 }
 
-.contact__form {
-    margin-bottom: 0.625rem;
+.contacto .contenido-seccion {
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
-.contact__input {
-    width: 100%;
-    padding: 0.625rem;
-    margin-bottom: 0.625rem;
+.contacto h2 {
+    font-size: 48px;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    padding: 20px 0;
 }
 
-.contact__textarea {
-    width: 100%;
-    height: 6.25rem;
-    padding: 0.625rem;
-    margin-bottom: 0.625rem;
+.contacto .fila {
+    display: flex;
 }
 
-.contact__button {
-    padding: 0.625rem 1.25rem;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
+.contacto .col {
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+
+.contacto .col input,
+.contacto .col textarea {
+    display: block;
+    width: 90%;
+    padding: 18px;
+    margin-bottom: 20px;
+    border: 1px solid #fff;
+    background-color: #252A2E;
+    color: #fff;
+    font-size: 18px;
+}
+
+.contacto button {
     cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
 }
 
-.contact__button:hover {
-    background-color: #45a049;
+.contacto button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
 }
 
-@media screen and (max-width: 768px) {
-    .contact {
-        padding: 0.625rem;
-    }
+.contacto button:hover .overlay {
+    width: 100%;
+}
 
-    .contact__input,
-    .contact__textarea {
-        padding: 0.3125rem;
-    }
+.contacto .col img {
+    width: auto;
+    height: auto;
+}
+
+.contacto .col .info {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    justify-content: center;
+    background-color: #252A2E;
+    transform: translate(-50%, -50%);
+    max-width: 11000px;
+    width: 60%;
+    height: 25%;
+}
+
+.contacto .col .info ul {
+    list-style: none;
+}
+
+.contacto .col .info ul li {
+
+    margin-bottom: 20px;
+}
+
+.contacto .col .info ul li i {
+    color: #1CB698;
+    display: inline-block;
+    margin-right: 20px;
 }

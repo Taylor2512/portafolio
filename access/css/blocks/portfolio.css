@@ -1,0 +1,30 @@
+.portfolio {
+    background-color: #252a2e;
+    color: #fff;
+    margin: auto;
+    width: 100%;
+}
+.portfolio .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+
+}
+.portfolio h2{
+    font-size: 48px;
+    font-family: 'Righteous', cursive;
+    text-align: center; 
+    padding: 20px 0;
+    margin-top: 5rem;
+}
+.portfolio .galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+}
+.portfolio .galeria .proyectos img{
+    width: 80%;
+    height: 45%;
+    object-fit: cover;
+    border-radius: 10px;
+}
