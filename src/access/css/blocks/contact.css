@@ -33,10 +33,7 @@
 
 .contacto .col input,
 .contacto .col textarea {
-    display: block;
-    width: 85%;
-    /* Ocupar todo el ancho disponible */
-    padding: 1.125em;
+     /* Ocupar todo el ancho disponible */
     margin-bottom: 1.25em;
     border: 0.0625em solid #fff;
     background-color: #252A2E;

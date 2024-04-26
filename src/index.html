@@ -1,5 +1,6 @@
+<!-- file index.html -->
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Portafolio de proyectos">
@@ -9,73 +10,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="access/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/png" href="access/img/favicon.png">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Platypi:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Portafolio</title>
+        <link rel="icon" type="image/png" href="access/img/favicon.png">
 </head>
-
-<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/png" href="access/img/favicon.png">
-<body>
-    <div class="contenedor-header">
+    <body>
         <header>
-            <div class="logo">
-                <a href="#">Milton</a>
-            </div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="components/about.html">Acerca de</a></li>
-                    <li><a href="components/blog.html">Experiencia</a></li>
-                    <li><a href="components/portfolio.html">Proyectos</a></li>
-                    <li><a href="components/contact.html">Contacto</a></li>
-                </ul>
+            <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <div class="logo">
+
+                    <a class="navbar-item" href="#">
+                        Milton
+                    </a>
+                    </div>
+              
+                        <a  role="button" class="navbar-burger burger" 
+                        aria-label="menu" aria-expanded="false" data-target="navbarMenu" onclick="toggleSidebar()">
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                        </a>
+                
+              
+                </div>
+                <div id="navbarMenu" class="navbar-menu">
+                    <div class="navbar-end">
+                        <a class="navbar-item" href="index.html">Inicio</a>
+                        <a class="navbar-item" href="components/about.html">Acerca de</a>
+                        <a class="navbar-item" href="components/blog.html">Experiencia</a>
+                        <a class="navbar-item" href="components/portfolio.html">Proyectos</a>
+                        <a class="navbar-item" href="components/contact.html">Contacto</a>
+                    </div>
+                </div>
+                
             </nav>
+
             <div id="sidebar" class="sidebar">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                   <hr>
-                    <li><a href="components/about.html">Acerca de</a></li>
-                    <hr>
-                    <li><a href="components/blog.html">Experiencia</a></li>
-                    <hr>
-                    <li><a href="components/portfolio.html">Proyectos</a></li>
-                    <hr>
-                    <li><a href="components/contact.html">Contacto</a></li>
-                    <hr>
-                </ul>
-            </div>
-            
-            <div class="nav-responsive" onclick="toggleSidebar()">
-                <i class="ti ti-nav-bar"></i>
-            </div>
-             
+                <aside class="menu">
+                    <ul class="menu-list">
+                        <li><a href="index.html">Inicio</a></li>
+                        <hr>
+                        <li><a href="components/about.html">Acerca de</a></li>
+                        <hr>
+                        <li><a href="components/blog.html">Experiencia</a></li>
+                        <hr>
+                        <li><a href="components/portfolio.html">Proyectos</a></li>
+                        <hr>
+                        <li><a href="components/contact.html">Contacto</a></li>
+                        <hr>
+                    </ul>
+                </aside>
             </div>
         </header>
-    </div>
-
-
-<!-- Seccion Inicio -->
-<section class="inicio" id="inicio">
-    <div class="contenido-baner">
-        <div class="contenido-img">
-            <img src="access/img/profile.jpeg" alt="Milton">
-        </div>
-        <h1>Milton Rivas</h1>
-        <h2>Ingeniero en Sistemas</h2>
-        <div class="redes">
-            
-        </div>
-    </div>
-</section>
- 
-    <footer class="footer">
-        <div class="container">
-            <p>Sígueme en:</p>
-            <div class="footer__social" id="socialLinks">
+    
+        <section class="hero is-fullheight is-dark"> 
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <figure class="image is-128x128 is-inline-block">
+                        <img class="is-rounded" src="access/img/profile.jpeg" alt="Milton">
+                    </figure>
+                    <h1 class="title is-1">Milton Rivas</h1>
+                    <h2 class="subtitle is-3">Ingeniero en Sistemas</h2>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/" class="button is-link is-rounded">
+                            <span class="icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </span>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/mrivasg" class="button is-link is-rounded">
+                            <span class="icon">
+                                <i class="fab fa-github"></i>
+                            </span>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="mailto:milton.rivas@uees.edu.ec" class="button is-link is-rounded">
+                            <span class="icon">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                            <span>Email</span>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </footer>
-    <script src="js/main.js"  ></script>  
-</body>
-</html>
+        </section>
+    
+        <footer class="footer">
+            <div class="content has-text-centered">
+                <p>
+                    Sígueme en:
+                    <a href="https://www.linkedin.com/" class="icon is-large">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/mrivasg" class="icon is-large">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:milton.rivas@uees.edu.ec" class="icon is-large">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </p>
+            </div>
+        </footer>
+        <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v6.0.0-beta1/js/all.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+    </html>

@@ -11,8 +11,11 @@
 @import url('blocks/portfolio.css');
 @import url('blocks/resume.css');
 
+
 /* Estilos adicionales si son necesarios */
 body {
-    background-color: #fff;
-    color: #333;
+    background-color: #16161a;
+    color: #fff;
+    font-family: 'Raleway', cursive;
 }
+

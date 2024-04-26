@@ -1,5 +1,6 @@
+<!-- file contact.html -->
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -21,60 +22,112 @@
 <link rel="icon" type="image/png" href="../access/img/favicon.png">
 
 <body>
-    <div class="contenedor-header">
-        <header>
-            <div class="logo">
-                <a href="#">Milton</a>
+    <header>
+        <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <div class="logo">
+
+                    <a class="navbar-item" href="#">
+                        Milton
+                    </a>
+                </div>
+
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarMenu" onclick="toggleSidebar()">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+
+
             </div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="about.html">Acerca de</a></li>
-                    <li><a href="blog.html">Experiencia</a></li>
-                    <li><a href="portfolio.html">Proyectos</a></li>
-                    <li><a href="contact.html">Contacto</a></li>
-                </ul>
-            </nav>
-            <div id="sidebar" class="sidebar">
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <hr>
-                    <li><a href="about.html">Acerca de</a></li>
-                    <hr>
-                    <li><a href="blog.html">Experiencia</a></li>
-                    <hr>
-                    <li><a href="portfolio.html">Proyectos</a></li>
-                    <hr>
-                    <li><a href="contact.html">Contacto</a></li>
-                    <hr>
-                </ul>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="../index.html">Inicio</a>
+                    <a class="navbar-item" href="../components/about.html">Acerca de</a>
+                    <a class="navbar-item" href="../components/blog.html">Experiencia</a>
+                    <a class="navbar-item" href="../components/portfolio.html">Proyectos</a>
+                    <a class="navbar-item" href="../components/contact.html">Contacto</a>
+                </div>
             </div>
 
-            <div class="nav-responsive" onclick="toggleSidebar()">
-                <i class="ti ti-nav-bar"></i>
-            </div>
-    </div>
+        </nav>
+
+        <div id="sidebar" class="sidebar">
+            <aside class="menu">
+                <ul class="menu-list">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <hr>
+                    <li><a href="../components/about.html">Acerca de</a></li>
+                    <hr>
+                    <li><a href="../components/blog.html">Experiencia</a></li>
+                    <hr>
+                    <li><a href="../components/portfolio.html">Proyectos</a></li>
+                    <hr>
+                    <li><a href="../components/contact.html">Contacto</a></li>
+                    <hr>
+                </ul>
+            </aside>
+        </div>
     </header>
-    </div>
+
     <!-- Seccion Contacto -->
     <section class="contacto">
         <div class="contenido-seccion">
             <h2>Contacto</h2>
             <div class="fila">
                 <div class="col">
-                    <input type="text" placeholder="Tú Nombre">
-                    <input type="text" placeholder="Apellidos">
-                    <input type="text" placeholder="Número de teléfono">
-                    <input type="text" placeholder="Dirección de correo">
-                    <input type="text" placeholder="Tema">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje">
+                    <div class="container is-max-widescreen">
+                        <div class="notification is-dark">
+                            <div class="field">
+                                <label class="label">Nombres</label>
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="Tú Nombre">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Apellidos</label>
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="Apellidos">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Telefono</label>
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="Número de teléfono">
+                                </div>
+                            </div>
+                            <div class="control has-icons-left has-icons-right">
+                                <input class="input" type="text" placeholder="Dirección de correo">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-envelope"></i>
+                                </span>
+                                <span class="icon is-small is-right">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                </span>
+                            </div>
+                            <div class="field">
+                                <label class="label">Asunto</label>
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="Tema">
+                                </div>
+                              </div>
+        
+                            <div class="field">
+                                <label class="label">Mensaje</label>
+                                <div class="control">
+                                    <textarea class="textarea" name="" id="" cols="30" rows="10" placeholder="Mensaje">
+                                    </textarea>
+                                </div>
+                            </div>
+                            <button>
+                                Enviar Mensaje
+                                <i class="ti ti-paper-plane"></i>
+                                <span class="overlay"></span>
+                            </button>
+                        </div>
+                      </div>
 
-                    </textarea>
-                    <button>
-                        Enviar Mensaje
-                        <i class="ti ti-paper-plane"></i>
-                        <span class="overlay"></span>
-                    </button>
                 </div>
                 <div class="col">
                     <img src="../access/img/ubicacion.jpg" alt="ubicacion">
@@ -100,16 +153,24 @@
 
         </div>
     </section>
-
     <footer class="footer">
-        <div class="container">
-            <p>Sígueme en:</p>
-            <div class="footer__social" id="socialLinks">
-                <!-- Aquí se pueden incluir enlaces a redes sociales -->
-            </div>
+        <div class="content has-text-centered">
+            <p>
+                Sígueme en:
+                <a href="https://www.linkedin.com/" class="icon is-large">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/mrivasg" class="icon is-large">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:milton.rivas@uees.edu.ec" class="icon is-large">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </p>
         </div>
     </footer>
-
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v6.0.0-beta1/js/all.js"></script>
     <script src="../js/main.js"></script>
 </body>
 

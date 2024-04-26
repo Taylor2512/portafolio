@@ -1,5 +1,7 @@
+<!-- file about.html -->
+
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -9,193 +11,165 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../access/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Platypi:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+     <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Platypi:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <title>Portafolio</title>
 </head>
 
-<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-<link rel="icon" type="image/png" href="../access/img/favicon.png">
-
 <body>
-    <div class="contenedor-header">
-        <header>
-            <div class="logo">
-                <a href="#">Milton</a>
+    <header>
+        <nav class="navbar is-dark">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#">
+                    Milton
+                </a>
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
             </div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="about.html">Acerca de</a></li>
-                    <li><a href="blog.html">Experiencia</a></li>
-                    <li><a href="portfolio.html">Proyectos</a></li>
-                    <li><a href="contact.html">Contacto</a></li>
-                </ul>
-            </nav>
-            <div id="sidebar" class="sidebar">
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <hr>
-                    <li><a href="about.html">Acerca de</a></li>
-                    <hr>
-                    <li><a href="blog.html">Experiencia</a></li>
-                    <hr>
-                    <li><a href="portfolio.html">Proyectos</a></li>
-                    <hr>
-                    <li><a href="contact.html">Contacto</a></li>
-                    <hr>
-                </ul>
-            </div>
-
-            <div class="nav-responsive" onclick="toggleSidebar()">
-                <i class="ti ti-nav-bar"></i>
-            </div>
-        </header>
-    </div>
-
-    <!-- Seccion acerca de mi -->
-    <section class="about-me">
-        <div class="contenido-seccion">
-            <h2>Acerca de mi</h2>
-            <p><span>Hola</span> soy Milton Rivas, un estudiante de programación, me dedico al desarrollo de videojuegos
-                y el
-                desarrollo de videojuegos.</p>
-
-            <div class="fila">
-                <div class="col">
-                    <h3>Información personal</h3>
-                    <ul>
-                        <li>
-                            <strong>Cumpleaños:</strong>
-                            25-08-1994
-                        </li>
-                        <li>
-                            <strong>Teléfono:</strong>
-                            +593 993898467
-                        </li>
-                        <li>
-                            <strong>Email:</strong>
-                             milton.rivas@uees.edu.ec
-                        </li>
-                        <li>
-                            <strong>Dirección:</strong>
-                            Km 5.5 via Daule Mapasingue
-                        </li>
-                        <li>
-                            <strong>Cargo:</strong>
-                            Desarrollador de software
-                        </li>
-                    </ul>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="../index.html">Inicio</a>
+                    <a class="navbar-item" href="../components/about.html">Acerca de</a>
+                    <a class="navbar-item" href="../components/blog.html">Experiencia</a>
+                    <a class="navbar-item" href="../components/portfolio.html">Proyectos</a>
+                    <a class="navbar-item" href="../components/contact.html">Contacto</a>
                 </div>
-                <div class="col">
-                    <h3>Intereses</h3>
-                    <div class="contenedor-intereses">
-                        <div class="intereses">
-                            <i class="ti ti-gamepad"></i>
-                            <span>Video Juegos </span>
-                        </div>
-                        <div class="intereses">
-                            <i class="ti ti-music"></i>
-                            <samp>Música</samp>
-                        </div>
-                        <div class="intereses">
-                            <i class="ti ti-plane"></i>
-                            <span>Viajar</span>
-                        </div>
-                        <div class="intereses">
-                            <i class="ti ti-book"></i>
-                            <samp>leer</samp>
-                        </div>
+            </div>
+        </nav>
+
+        <aside id="sidebar" class="sidebar is-dark">
+            <div class="menu">
+                <p class="menu-label">Menú</p>
+                <ul class="menu-list">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../components/about.html">Acerca de</a></li>
+                    <li><a href="../components/blog.html">Experiencia</a></li>
+                    <li><a href="../components/portfolio.html">Proyectos</a></li>
+                    <li><a href="../components/contact.html">Contacto</a></li>
+                </ul>
+            </div>
+        </aside>
+    </header>
+
+ 
+    <section class="section">
+        <div class="container">
+            <h2 class="title has-text-centered">Acerca de mi</h2>
+            <div class="columns">
+                <div class="column">
+                    <p><span>Hola</span> soy Milton Rivas, un estudiante de programación, me dedico al desarrollo de videojuegos y el desarrollo de videojuegos.</p>
+                </div>
+                <div class="column">
+                    <div class="content">
+                        <h3>Información personal</h3>
+                        <ul>
+                            <li><strong>Cumpleaños:</strong> 25-08-1994</li>
+                            <li><strong>Teléfono:</strong> +593 993898467</li>
+                            <li><strong>Email:</strong> milton.rivas@uees.edu.ec</li>
+                            <li><strong>Dirección:</strong> Km 5.5 via Daule Mapasingue</li>
+                            <li><strong>Cargo:</strong> Desarrollador de software</li>
+                        </ul>
+                    </div>
+                    <div class="tags">
+                        <span class="tag is-info">Video Juegos</span>
+                        <span class="tag is-info">Música</span>
+                        <span class="tag is-info">Viajar</span>
+                        <span class="tag is-info">Leer</span>
                     </div>
                 </div>
-
             </div>
 
-            <button>
-                Descargar CV
-                <i class="ti ti-dowload"></i>
-                <div class="overlay"></div>
-            </button>
+            <div class="buttons is-centered  ">
+                <a href="#" class="button is-info">
+                    Descargar CV
+                    <span class="icon">
+                        <i class="fas fa-download"></i>
+                    </span>
+                </a>
+            </div>
         </div>
     </section>
-    <div class="about-me">
-<div class="table">
-    <table>
-        <thead>
-            <tr>
-                <th>Lenguaje de Programación</th>
-                <th>Bajo</th>
-                <th>Medio</th>
-                <th>Alto</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Java</td>
-                <td><i class="ti ti-check"></i></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Python</td>
-                <td></td>
-                <td><i class="ti ti-check"></i></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>JavaScript</td>
-                <td></td>
-                <td></td>
-                <td><i class="ti ti-check"></i></td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-    </div>
- 
-    <div class="about-me">
-        <div class="grid">
-            <h3>Respuestas</h3>
 
-            <li>
-                <strong>¿Qué le motivó a estudiar la carrera de sistemas?</strong>
-                <p>Mi interés por resolver problemas complejos y mi fascinación por la tecnología me llevaron a elegir
-                    la carrera de sistemas. Siempre me ha entusiasmado la idea de crear soluciones innovadoras que
-                    mejoren la vida de las personas.</p>
-            </li>
-            <li>
-                <strong>¿Cuál es su campo de experiencia (seguridad, redes, entre otros)?</strong>
-                <p>Mi campo de experiencia se centra en el desarrollo de software, especialmente en aplicaciones web y
-                    móviles. También tengo interés en seguridad informática y arquitectura de sistemas.</p>
-            </li>
-            <li>
-                <strong>¿Qué herramientas y/o tecnologías conoce?</strong>
-                <p>Domino varios lenguajes de programación como Java, Python y JavaScript, así como frameworks como
-                    React y Spring. Además, tengo experiencia en bases de datos SQL y NoSQL, y en el uso de herramientas
-                    como Git para el control de versiones.</p>
-            </li>
-            <li>
-                <strong>¿Qué tipos de proyectos ha realizado en su primer trabajo o actualmente? Mencione al menos un
-                    proyecto.</strong>
-                <p>En mi trabajo actual, participé en el desarrollo de un sistema de gestión de inventario utilizando
-                    tecnologías de nube como AWS. Este proyecto me permitió aplicar mis conocimientos en arquitectura de
-                    software y trabajo colaborativo.</p>
-            </li>
-
-        </div>
-
-    </div>
-    <footer class="footer">
+    <section class="section is-dark">
         <div class="container">
-            <p>Sígueme en:</p>
-            <div class="footer__social" id="socialLinks">
+            <h3 class="title is-3">Habilidades</h3>
+            <div class="table-container">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Lenguaje de Programación</th>
+                            <th>Bajo</th>
+                            <th>Medio</th>
+                            <th>Alto</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Java</td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Python</td>
+                            <td></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td></td>
+                            <td></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
+    </section>
+
+    <section class="section is-dark">
+        <div class="container">
+            <h3 class="title is-3">Respuestas</h3>
+            <ul>
+                <li><strong>¿Qué le motivó a estudiar la carrera de sistemas?</strong>
+                    <p>Mi interés por resolver problemas complejos y mi fascinación por la tecnología me llevaron a elegir la carrera de sistemas. Siempre me ha entusiasmado la idea de crear soluciones innovadoras que mejoren la vida de las personas.</p>
+                </li>
+                <li><strong>¿Cuál es su campo de experiencia (seguridad, redes, entre otros)?</strong>
+                    <p>Mi campo de experiencia se centra en el desarrollo de software, especialmente en aplicaciones web y móviles. También tengo interés en seguridad informática y arquitectura de sistemas.</p>
+                </li>
+                <li><strong>¿Qué herramientas y/o tecnologías conoce?</strong>
+                    <p>Domino varios lenguajes de programación como Java, Python y JavaScript, así como frameworks como React y Spring. Además, tengo experiencia en bases de datos SQL y NoSQL, y en el uso de herramientas como Git para el control de versiones.</p>
+                </li>
+                <li><strong>¿Qué tipos de proyectos ha realizado en su primer trabajo o actualmente? Mencione al menos un proyecto.</strong>
+                    <p>En mi trabajo actual, participé en el desarrollo de un sistema de gestión de inventario utilizando tecnologías de nube como AWS. Este proyecto me permitió aplicar mis conocimientos en arquitectura de software y trabajo colaborativo.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                Sígueme en:
+                <a href="https://www.linkedin.com/" class="icon is-large">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/mrivasg" class="icon is-large">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:milton.rivas@uees.edu.ec" class="icon is-large">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </p>
+        </div>
     </footer>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v6.0.0-beta1/js/all.js"></script>
     <script src="../js/main.js"></script>
 </body>
-
+</html>
 </html>

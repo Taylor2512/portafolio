@@ -1,5 +1,6 @@
+<!-- file resume.html -->
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -21,41 +22,54 @@
 <link rel="icon" type="image/png" href="../access/img/favicon.png">
 
 <body>
-    <div class="contenedor-header">
-        <header>
-            <div class="logo">
-                <a href="#">Milton</a>
-            </div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="about.html">Acerca de</a></li>
-                    <li><a href="blog.html">Experiencia</a></li>
-                    <li><a href="portfolio.html">Proyectos</a></li>
-                    <li><a href="contact.html">Contacto</a></li>
-                </ul>
-            </nav>
-            <div id="sidebar" class="sidebar">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <hr>
-                <li><a href="about.html">Acerca de</a></li>
-                <hr>
-                <li><a href="blog.html">Experiencia</a></li>
-                <hr>
-                <li><a href="portfolio.html">Proyectos</a></li>
-                <hr>
-                <li><a href="contact.html">Contacto</a></li>
-                <hr>
-            </ul>
-            </div>
+    <header>
+        <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <div class="logo">
 
-            <div class="nav-responsive" onclick="toggleSidebar()">
-                <i class="ti ti-nav-bar"></i>
+                <a class="navbar-item" href="#">
+                    Milton
+                </a>
+                </div>
+          
+                    <a  role="button" class="navbar-burger burger" 
+                    aria-label="menu" aria-expanded="false" data-target="navbarMenu" onclick="toggleSidebar()">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+            
+          
             </div>
-    </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="../index.html">Inicio</a>
+                    <a class="navbar-item" href="../components/about.html">Acerca de</a>
+                    <a class="navbar-item" href="../components/blog.html">Experiencia</a>
+                    <a class="navbar-item" href="../components/portfolio.html">Proyectos</a>
+                    <a class="navbar-item" href="../components/contact.html">Contacto</a>
+                </div>
+            </div>
+            
+        </nav>
+
+        <div id="sidebar" class="sidebar">
+            <aside class="menu">
+                <ul class="menu-list">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <hr>
+                    <li><a href="../components/about.html">Acerca de</a></li>
+                    <hr>
+                    <li><a href="../components/blog.html">Experiencia</a></li>
+                    <hr>
+                    <li><a href="../components/portfolio.html">Proyectos</a></li>
+                    <hr>
+                    <li><a href="../components/contact.html">Contacto</a></li>
+                    <hr>
+                </ul>
+            </aside>
+        </div>
     </header>
-    </div>
 
 
     <!-- Seccion Inicio -->
@@ -70,13 +84,23 @@
     </section>
 
     <footer class="footer">
-        <div class="container">
-            <p>Sígueme en:</p>
-            <div class="footer__social" id="socialLinks">
-            </div>
+        <div class="content has-text-centered">
+            <p>
+                Sígueme en:
+                <a href="https://www.linkedin.com/" class="icon is-large">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/mrivasg" class="icon is-large">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:milton.rivas@uees.edu.ec" class="icon is-large">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </p>
         </div>
     </footer>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v6.0.0-beta1/js/all.js"></script>
     <script src="../js/main.js"></script>
 </body>
-
 </html>
