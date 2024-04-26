@@ -78,3 +78,33 @@ function toggleSidebar() {
         sidebar.classList.add('active');
     }
 }
+document.addEventListener('DOMContentLoaded', () => {
+    const burger = document.querySelector('.navbar-burger');
+    const menu = document.querySelector('#navbarMenu');
+
+    burger.addEventListener('click', () => {
+        burger.classList.toggle('is-active');
+        menu.classList.toggle('is-active');
+    });
+});
+document.addEventListener('DOMContentLoaded', () => {
+    // Obtén todas las referencias necesarias
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+    // Verifica si hay elementos de la barra de navegación
+    if ($navbarBurgers.length > 0) {
+        // Añade un evento de click en cada uno
+        $navbarBurgers.forEach(el => {
+            el.addEventListener('click', () => {
+                // Obtén el objetivo del menú
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
+
+                // Cambia la clase 'is-active' en el menú de hamburguesa
+                el.classList.toggle('is-active');
+                // Cambia la clase 'is-active' en el menú desplegable
+                $target.classList.toggle('is-active');
+            });
+        });
+    }
+});
