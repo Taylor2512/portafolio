@@ -1,7 +1,4 @@
 
-
-
-
 function toggleSidebar() {
     var sidebar = document.getElementById('sidebar');
     if (sidebar.classList.contains('active')) {
@@ -55,6 +52,12 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // Función para mostrar mensaje de error
+    /**
+     * Muestra un mensaje de error en un elemento de entrada y agrega estilos correspondientes.
+     * @param {HTMLElement} inputElement - El elemento de entrada donde se mostrará el error.
+     * @param {string} mensaje - El mensaje de error a mostrar.
+     * @returns {void}
+     */
     const mostrarError = (inputElement, mensaje) => {
         const controlElement = inputElement.closest('.control');
         if (controlElement) {
@@ -135,29 +138,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
- 
-
-// Evento de clic para el botón "Mostrar Habilidades" en about.html
-document.addEventListener('DOMContentLoaded', function() {
-    const showSkillsButton = document.getElementById('showSkillsButton');
-    if (showSkillsButton) {
-        showSkillsButton.addEventListener('click', function() {
-            console.log('Habilidades mostradas');
-            // Agregar lógica para mostrar las habilidades en la página
-        });
-    }
-});
-
- 
-
-// Evento de envío de formulario para contact.html
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
-        contactForm.addEventListener('submit', function(event) {
+        contactForm.addEventListener('submit', (event) => {
             event.preventDefault(); // Evitar que el formulario se envíe por defecto
             console.log('Formulario enviado');
-            // Agregar lógica para enviar el formulario usando AJAX, etc.
+            // Lógica para enviar el formulario usando AJAX, etc.
+            // Aquí puedes agregar la lógica para enviar los datos del formulario
+            // Por ejemplo, puedes hacer una solicitud AJAX al servidor
+
+            // Mostrar mensaje de éxito al enviar el formulario
+            alert('Formulario enviado correctamente');
         });
     }
 });
@@ -173,5 +165,23 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
-
- 
+document.addEventListener('DOMContentLoaded', () => {
+    const showSkillsButton = document.getElementById('showSkillsButton');
+    if (showSkillsButton) {
+        let isSkillsVisible = false;
+        showSkillsButton.addEventListener('click', () => {
+            console.log('Habilidades mostradas');
+            // Lógica para mostrar u ocultar las habilidades en la página about.html
+            const skillsElement = document.getElementById('skillsSection');
+            if (skillsElement) {
+                if (isSkillsVisible) {
+                    skillsElement.style.display = 'none';
+                    isSkillsVisible = false;
+                } else {
+                    skillsElement.style.display = 'block';
+                    isSkillsVisible = true;
+                }
+            }
+        });
+    }
+});
